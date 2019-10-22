@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Miner : MonoBehaviour
 {
+    #region Variables
     private Vector3 nearestMinesLocation;
     public GameObject nearestMines;
     public GameObject[] nearestMinesArray;
@@ -16,28 +17,29 @@ public class Miner : MonoBehaviour
     public Vector3 castleLocation;
     GameObject[] castleHome;
 
+    #endregion
+
 
     // Start is called before the first frame update
     void Start()
     {
-        castleLocation = new Vector3(0, .1f, 0);
-        nearestMinesArray = GameObject.FindGameObjectsWithTag("Mines");
+        castleLocation = new Vector3(0, .1f, 0);                                                            //encapsulates castle location
+        nearestMinesArray = GameObject.FindGameObjectsWithTag("Mines");                                     //finds all Mines and arranges them in array
         //Debug.Log(nearestMinesArray);
-        nearestMines = nearestMinesArray[Random.Range(0, nearestMinesArray.Length)];
+        nearestMines = nearestMinesArray[Random.Range(0, nearestMinesArray.Length)];                        //picks a random mine from the array 
         //Debug.Log(nearestMines);
-        nearestMinesLocation = nearestMines.transform.position;
+        nearestMinesLocation = nearestMines.transform.position;                                             //gets the location of the mine that was picked
         //Debug.Log(nearestMinesLocation);
-        castleHome = GameObject.FindGameObjectsWithTag("Castle");
+        castleHome = GameObject.FindGameObjectsWithTag("Castle");                                           //finds and encapsulates the gameobject data of the castle
     }
 
     // Update is called once per frame
     void Update()
     {
-        GoPlaces();
-
-        MineGold();
-        GoHome();
-        AtHome();
+        GoPlaces();                                                                                         //has worker travel to the mine that is picked
+        MineGold();                                                                                         // once there has worker mine gold
+        GoHome();                                                                                           // once mining is done returns to castle
+        AtHome();                                                                                           // increments gold and cleans up worker
 
     }
 

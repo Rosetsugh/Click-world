@@ -6,18 +6,19 @@ public class forest : MonoBehaviour
 {
     public int amountOfWood;
     [SerializeField] GameObject noMoreForest;
+
     // Start is called before the first frame update
     void Start()
     {
-        amountOfWood = Random.Range(12, 14);
+        amountOfWood = Random.Range(12, 25);                                                        //sets random amount of wood in each forest
     }
 
     // Update is called once per frame
     void Update()
     {
-        IfEmpty();
+        IfEmpty();                                                                                  //replaces forest with fields once all the wood is gone
     }
-
+    // on mouse click pulls all lumber Jack to this forest tile that are currently traveling
     private void OnMouseDown()
     {
         GameObject[] Lumb = GameObject.FindGameObjectsWithTag("Jacks");
