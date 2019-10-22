@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8825424656792495479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8825424656792495477}
+  - component: {fileID: 8825424656792495476}
+  m_Layer: 0
+  m_Name: LevelMaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8825424656792495477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8825424656792495479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8825424656792495476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8825424656792495479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1b3765997878e48a4b95ecd21ab681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Land:
+  - {fileID: 752094136729618187, guid: 8441b1dd5fa0ef841832c9aa49501ba1, type: 3}
+  - {fileID: 9026118082810516240, guid: 7102ca5649e80d246819d8ec026228ca, type: 3}
+  - {fileID: 8742024272446621356, guid: 92e3b6d0e2f7dc94a84eb8e3101b269b, type: 3}
+  - {fileID: 8742024272446621356, guid: 92e3b6d0e2f7dc94a84eb8e3101b269b, type: 3}
+  - {fileID: 8742024272446621356, guid: 92e3b6d0e2f7dc94a84eb8e3101b269b, type: 3}
+  - {fileID: 1893903692149068079, guid: 1c94dc41aee2509408e287699f50c53d, type: 3}
+  - {fileID: 9026118082810516240, guid: 7102ca5649e80d246819d8ec026228ca, type: 3}
+  - {fileID: 8742024272446621356, guid: 92e3b6d0e2f7dc94a84eb8e3101b269b, type: 3}
+  - {fileID: 8742024272446621356, guid: 92e3b6d0e2f7dc94a84eb8e3101b269b, type: 3}
+  - {fileID: 8742024272446621356, guid: 92e3b6d0e2f7dc94a84eb8e3101b269b, type: 3}
+  - {fileID: 8742024272446621356, guid: 92e3b6d0e2f7dc94a84eb8e3101b269b, type: 3}
+  - {fileID: 9026118082810516240, guid: 7102ca5649e80d246819d8ec026228ca, type: 3}
+  - {fileID: 9026118082810516240, guid: 7102ca5649e80d246819d8ec026228ca, type: 3}
+  - {fileID: 9026118082810516240, guid: 7102ca5649e80d246819d8ec026228ca, type: 3}
+  - {fileID: 9026118082810516240, guid: 7102ca5649e80d246819d8ec026228ca, type: 3}
+  KingdomSize: 5
+  playerCamera: {fileID: 0}

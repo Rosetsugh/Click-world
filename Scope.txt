@@ -1,0 +1,16 @@
+######## Welcome  ##########################################################################
+
+this project is going to be a game.
+
+The premise is to have an Idle Click Kingdom Builder.
+
+This game is will be presented in 2 dimesions with FAUX 3 dimensional graphics.
+
+######### first list of TODO ###############################################################
+
+Make a ground 
+make a castle that is clickable and offers the ability to set priority to Lumber collection
+Make a worker bot
+make a forest square where lumber can be collected.
+
+############################################################################################
