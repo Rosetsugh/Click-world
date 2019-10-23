@@ -46,3 +46,5 @@ MonoBehaviour:
   lumberStash: {fileID: 0}
   goldStores: {fileID: 0}
   canvas: {fileID: 3973337339723696908, guid: 0500e154f1280df4aa02314a6d994a25, type: 3}
+  castle: {fileID: 752094136729618187, guid: 8441b1dd5fa0ef841832c9aa49501ba1, type: 3}
+  text: {fileID: 0}

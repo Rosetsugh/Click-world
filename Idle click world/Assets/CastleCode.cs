@@ -7,12 +7,15 @@ public class CastleCode : MonoBehaviour
     #region Variables
     [SerializeField] public GameObject lumberJack;
     [SerializeField] public GameObject miner;
-    public int numOfJacks = 5;
-    public int numofMiners = 5;
+    public int numOfJacks = 3;
+    public int numofMiners;
     public static int jacksOnField = 0;
     public static int minersOnField = 0;
     public int spawnTimer = 0;
     public int timer = 500;
+    public int numofworkers = 3;
+    public TMPro.TextMeshProUGUI text;
+
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,7 @@ public class CastleCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //numOfJacks = numofworkers - numofMiners;
         jacksOnField = GameObject.FindGameObjectsWithTag("Jacks").Length;                                                                               // Finds all objects with tag "Jacks"
         //Debug.Log(jacksOnField);
         //Debug.Log(spawnTimer);
@@ -53,4 +57,21 @@ public class CastleCode : MonoBehaviour
     {
         spawnTimer -= 1;                                                                                                                                // Timer for respawns
     }
+
+    public void MinerIncrease()
+    {
+        if (numOfJacks + numofMiners < numofworkers + 1)
+        {
+            numofMiners += 1;
+        }
+    }
+
+    public void JackIncrease()
+    {
+        if (numofMiners > 0)
+        {
+            numofMiners -= 1;
+        }
+    }
+
 }

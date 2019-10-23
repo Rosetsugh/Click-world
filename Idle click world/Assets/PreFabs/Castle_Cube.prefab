@@ -109,10 +109,12 @@ MonoBehaviour:
   lumberJack: {fileID: 6208167548144486521, guid: 219fb1a93354aac478e20087b369d4d5,
     type: 3}
   miner: {fileID: 1108443764156068164, guid: 403a57c9d8aa8b245849d654a30a9f10, type: 3}
-  numOfJacks: 50
-  numofMiners: 3
+  numOfJacks: 4
+  numofMiners: 1
   spawnTimer: 0
   timer: 50
+  numofworkers: 5
+  text: {fileID: 0}
 --- !u!1 &1378982779760806187
 GameObject:
   m_ObjectHideFlags: 0
